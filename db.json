@@ -1,0 +1,223 @@
+{
+  "users": [
+    {
+      "id": 18,
+      "username": "customer_admin",
+      "password": "healthmonitoring2021",
+      "email": "ad@gmail.com",
+      "created_at": "Jul 6, 2020, 1:58:00 PM",
+      "status": true,
+      "role": {
+        "role_id": 4,
+        "role_name": "CUSTOMER_ADMINISTRATOR",
+        "role_description": "Municipal Administrator",
+        "permission": {
+          "permission_id": 4,
+          "permission_name": "ADMIN_PERM",
+          "read": true,
+          "write": true,
+          "delete": false,
+          "self_entity": true,
+          "group_entity": true,
+          "all_entities": true
+        }
+      },
+      "sub": "50a7a0d7-80fb-42c0-905b-c6c5e0cb682b",
+      "userRole": "Admin",
+      "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA",
+      "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6"
+    }
+  ],
+  "patients": [
+    {
+      "firstname": "Kason",
+      "lastname": "Frye",
+      "patient_id": 2,
+      "heart_rate": "75",
+      "email": "kasfr@gmail.com",
+      "z_accel": "1",
+      "sex": "Female",
+      "address_street": "Syggrou",
+      "address_number": "189",
+      "address_city": "Athens",
+      "address_postalcode": "17673"
+    },
+    {
+      "firstname": "John",
+      "lastname": "Smith",
+      "patient_id": 11,
+      "heart_rate": "75",
+      "sys_blood_pressure": "128",
+      "dia_blood_pressure": "97",
+      "email": "jsmith@gmail.com",
+      "sex": "Male",
+      "address_street": "Syggrou",
+      "address_number": "189",
+      "address_city": "Athens",
+      "address_postalcode": "17673"
+    },
+    {
+      "firstname": "Mary",
+      "lastname": "Jones",
+      "patient_id": 12,
+      "heart_rate": "58",
+      "email": "mjones@gmail.com",
+      "sex": "Female",
+      "address_street": "Syggrou",
+      "address_number": "189",
+      "address_city": "Athens",
+      "address_postalcode": "17673"
+    },
+    {
+      "firstName": "frf",
+      "lastName": "fr",
+      "email": "email",
+      "facility_id": "1",
+      "address_street": "f",
+      "address_number": "f",
+      "address_city": "f",
+      "address_postalCode": "f",
+      "sex": "male",
+      "amka": "f",
+      "phonenumber": "f",
+      "age": 4,
+      "ext_patient": true,
+      "patient_id": 13
+    },
+    {
+      "firstname": "Kiki",
+      "lastname": "Skenteri",
+      "email": "email",
+      "facility_id": "1",
+      "address_street": "f",
+      "address_number": "f",
+      "address_city": "f",
+      "address_postalCode": "f",
+      "sex": "female",
+      "amka": "f",
+      "phonenumber": "f",
+      "age": 11,
+      "ext_patient": true,
+      "patient_id": 14
+    },
+    {
+      "firstname": "re",
+      "lastname": "fefwef",
+      "email": "werfwf",
+      "facility_id": "1",
+      "address_street": "fwefwe",
+      "address_number": "fwef",
+      "address_city": "fwef",
+      "address_postalCode": "fwefwe",
+      "sex": "male",
+      "amka": "ferfer",
+      "phonenumber": "frefe",
+      "age": 0,
+      "ext_patient": true,
+      "patient_id": 15
+    },
+    {
+      "firstname": "sfdsd",
+      "lastname": "fsdf",
+      "email": "fsdfs",
+      "facility_id": "1",
+      "address_street": "fsdf",
+      "address_number": "fsd",
+      "address_city": "fsdf",
+      "address_postalCode": "fsd",
+      "sex": "male",
+      "amka": "fsdf",
+      "phonenumber": "fsdf",
+      "age": 0,
+      "ext_patient": true,
+      "patient_id": 16
+    }
+  ],
+  "realmeasurements": {
+    "heart_rate": [
+      {
+        "timestamp": "2021-11-11 12:00:00",
+        "patient_id": 11,
+        "heart_rate": "80"
+      },
+      {
+        "timestamp": "2021-11-10 18:00:00",
+        "patient_id": 11,
+        "heart_rate": "85"
+      }
+    ],
+    "bloodpressure": [
+      {
+        "timestamp": "2021-11-11 12:00:00",
+        "patient_id": 11,
+        "sys_blood_pressure": "156",
+        "dia_blood_pressure": "120"
+      },
+      {
+        "timestamp": "2021-11-10 18:00:00",
+        "patient_id": 11,
+        "sys_blood_pressure": "155",
+        "dia_blood_pressure": "118"
+      },
+      {
+        "timestamp": "2021-11-10 19:00:00",
+        "patient_id": 11,
+        "sys_blood_pressure": "110",
+        "dia_blood_pressure": "90"
+      },
+      {
+        "timestamp": "2021-11-10 20:00:00",
+        "patient_id": 11,
+        "sys_blood_pressure": "80",
+        "dia_blood_pressure": "40"
+      }
+    ],
+    "oxygen_saturation": [
+      {
+        "timestamp": "2023-10-18 14:19:20",
+        "patient_id": 11,
+        "oxygen_saturation": "96"
+      }
+    ],
+    "temperature": [
+      {
+        "timestamp": "2021-11-22 18:00:00",
+        "patient_id": 11,
+        "temperature": "36.3"
+      },
+      {
+        "timestamp": "2021-11-22 16:00:00",
+        "patient_id": 11,
+        "temperature": "36.5"
+      }
+    ],
+    "steps": [
+      {
+        "timestamp": "2023-11-03 00:00:00",
+        "patient_id": 11,
+        "steps": "48"
+      }
+    ],
+    "distance": [
+      {
+        "timestamp": "2022-06-22 00:00:00",
+        "patient_id": 11,
+        "distance": "593"
+      }
+    ],
+    "weight": [
+      {
+        "timestamp": "2023-01-03 15:20:00",
+        "patient_id": 11,
+        "weight": "88.000"
+      }
+    ]
+  },
+  "facilities": [
+    {
+      "facility_id": 1,
+      "facility_name": "KAPH DIMOU VYRONA",
+      "facility_address": "AGIAS TRIADAS 13"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+.card {
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 15px 50px;
+  position: relative;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #555;
+    font-size: 0.9rem;
+
+    .sex-icon {
+      color: #999;
+    }
+  }
+
+  .card-body {
+    margin-top: 10px;
+
+    .vital {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+
+      i {
+        margin-right: 8px;
+        color: #444;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .fab {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #03a9f4;
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    i {
+      font-size: 1.2rem;
+    }
+
+    &:hover {
+      background-color: #0288d1;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+ <div class="patient-card" (click)="toggleDetails()">
+  <h3>Patient Details</h3>
+
+  <div class="detail-item">
+    <span class="label">Name</span>
+    <span class="value">{{ details?.firstname ?? '-' }}</span>
+  </div>
+
+  <div class="detail-item">
+    <span class="label">Surname</span>
+    <span class="value">{{ details?.lastname ?? '-' }}</span>
+  </div>
+
+  @if (showMoreDetails()) {
+    <div class="detail-item">
+      <span class="label">Email</span>
+      <span class="value">{{ details?.email ?? '-' }}</span>
+    </div>
+
+    <div class="detail-item">
+      <span class="label">Adress</span>
+      <span class="value">
+        <span>{{ details?.address_street }} </span>
+        <span>{{ details?.address_number }} </span>
+        <span>{{ details?.address_city }}</span></span>
+    </div>
+
+    <div class="detail-item">
+      <span class="label">Phone number</span>
+      <span class="value">{{ details?.phonenumber ?? '-' }}</span>
+    </div>
+
+    <div class="detail-item">
+      <span class="label">Age</span>
+      <span class="value">{{ details?.age ?? '-' }}</span>
+    </div>
+
+    <div class="detail-item">
+      <span class="label">Sex</span>
+      <span class="value">{{ details?.sex ?? '-' }}</span>
+    </div>
+
+    <div class="detail-item">
+      <span class="label">Facility</span>
+      <span class="value">{{ details?.facility?.facility_name ?? '-' }}</span>
+    </div>
+  }
+
+  <div class="more-button">
+    <button>...</button>
+  </div>
+</div>

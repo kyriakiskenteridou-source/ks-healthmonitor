@@ -1,0 +1,86 @@
+// Variables
+$header-height: 60px;
+
+$color-blue-light: #e6f0fa;
+$color-gray-light: #f0f0f0;
+$color-border: #e1e1e1;;
+
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: $color-blue-light;
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid $color-border;
+
+  .account-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+}
+
+.account-icon {
+  position: relative;
+  cursor: pointer;
+
+  .tooltip {
+    position: absolute;
+    top: 125%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 100%; 
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent #333 transparent;
+    }
+  }
+
+  &:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #f9e79f;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+
+  .yellow {
+    color: #f9e79f; 
+  }
+
+  .blue {
+    color: #85c1e9;
+  }
+}
+

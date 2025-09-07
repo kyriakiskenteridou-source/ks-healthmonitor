@@ -1,0 +1,47 @@
+<div class="card">
+  <div class="card-header">
+    <span class="name">{{ patient.firstname }} {{ patient.lastname }}</span>
+    @if (patient.sex === 'Female') {
+      <i class="fas fa-person-dress sex-icon"></i>
+    } @else {
+      <i class="fas fa-person sex-icon"></i>
+    }
+    
+  </div>
+
+  <div class="card-body">
+    @if (patient.heart_rate) {
+      <div class="vital">
+        <i class="fas fa-heartbeat"></i>
+        <span>Heart Rate</span>
+        <strong>{{ patient.heart_rate }} bpm</strong>
+      </div>
+    }
+
+    @if (patient.z_accel) {
+        <div class="vital">
+        <i class="fas fa-plane"></i>
+        <span>Z Accel</span>
+        <strong>{{ patient.z_accel }} m/s²</strong>
+        </div>
+    }
+
+    @if (patient.sys_blood_pressure && patient.dia_blood_pressure) {
+        <div class="vital">
+        <i class="fas fa-tint"></i>
+        <span>Blood Pressure</span>
+        <strong>{{ patient.sys_blood_pressure }} / {{ patient.dia_blood_pressure }}</strong>
+        </div>
+    }
+
+      @if (!patient.sys_blood_pressure && !patient.dia_blood_pressure && !patient.heart_rate && !patient.z_accel) {
+        <div class="vital">
+        No data
+        </div>
+    }
+  </div>
+
+  <button class="fab">
+    <i class="fas fa-list"></i>
+  </button>
+</div>

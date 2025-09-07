@@ -1,0 +1,23 @@
+<div class="sub-header">
+    <div class="back-icon" [routerLink]="['/dashboard']">
+        <i class="fas fa-arrow-left"></i> 
+    </div>
+</div>
+
+<div class="page-content">
+    <div class="measurement-cards-container">
+        @for (measurement of measurements; track measurement.key) {
+            @if (measurement.value) {
+                <app-measurement-card [measurement]="measurement" ></app-measurement-card>
+            }
+        }
+
+        <app-patient-info [patientId]="patient.patient_id"></app-patient-info>
+    </div>
+
+    <div>
+        <div class="chart-container">
+            <canvas #bpChart></canvas>
+        </div>
+    </div>
+</div>

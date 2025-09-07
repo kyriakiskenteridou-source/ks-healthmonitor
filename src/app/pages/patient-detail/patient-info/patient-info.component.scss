@@ -1,0 +1,56 @@
+.patient-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 320px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .detail-item {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+    align-items: center;
+
+    .label {
+      flex-shrink: 0;
+      color: #555;
+      font-size: 14px;
+      min-width: 110px;
+    }
+
+    .value {
+      font-weight: bold;
+      color: #000;
+      font-size: 15px;
+      word-wrap: break-word;
+      white-space: normal;
+    }
+  }
+
+  .more-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    button {
+      background-color: #00bfff;
+      border: none;
+      color: #fff;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+}

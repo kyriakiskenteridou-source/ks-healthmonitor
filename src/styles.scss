@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+// Variables
+$subheader-height: 40px;
+
+$color-blue-light: #e6f0fa;
+$color-gray-light: #f0f0f0;
+$color-border: #e1e1e1;;
+
+.sub-header {
+  background-color: $color-gray-light;
+  height: $subheader-height;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+  border-bottom: 1px solid $color-border;
+
+  .add-user-icon, .back-icon {
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #007bff;
+  }
+}
+
+.page-content {
+  padding: 20px; //1rem;
+  background-color: #fff8f8;
+  height: 100vh;
+}

@@ -1,0 +1,40 @@
+<div class="sub-header">
+    <div class="add-user-icon" (click)="addPatientDialog()">
+        <i class="fas fa-user-plus"></i> 
+    </div>
+</div>
+
+<div class="page-content">
+    <div class="patient-cards">
+        @if (patients?.length) {
+            @for (patient of patients; track patient.patient_id) {
+                <app-patient-card [patient]="patient"
+                (click)="selectPatient(patient)"
+                [routerLink]="['/patient-detail', patient.patient_id]">
+                </app-patient-card>
+            }
+        } @else {
+            <p>{{noPatients}}</p>
+        }
+    </div>
+
+    <div class="paginator">
+        <button 
+            class="pagination-button" 
+            (click)="previousPage()" 
+            [disabled]="currentPage === 0">
+            <i class="fas fa-arrow-left"></i>
+            Previous
+        </button>
+
+        <button 
+            class="pagination-button" 
+            (click)="nextPage()">
+            Next
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+</div>
+
+<app-patient-data-dialog *ngIf="showPatientDialog" (close)="onCloseDialog()" (save)="onPatientSave()"></app-patient-data-dialog>
+

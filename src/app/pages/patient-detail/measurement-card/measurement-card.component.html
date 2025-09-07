@@ -1,0 +1,11 @@
+<div class="card">
+    <h3>{{ title }}</h3>
+    <p>{{ unit }}</p>
+    <div class="value {{color}}">
+        @if (title === 'Heart Rate') {
+            <i class="fa fa-heart"></i> {{ this.measurement.value }}
+        } @else {
+            <i class="fa fa-heartbeat"></i> {{ this.measurement.value }}
+        }
+    </div>
+</div>
