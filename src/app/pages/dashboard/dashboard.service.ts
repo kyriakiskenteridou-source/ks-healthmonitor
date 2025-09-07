@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DashboardService {
-  private baseUrl ='http://localhost:3000/patients';   //'http://62.74.232.210:4566/healthmonitor/';
+  private baseUrl = 'http://62.74.232.210:4566/healthmonitor/patients'; // 'http://localhost:3000/patients'; 
 
   constructor(private http: HttpClient) {}
 

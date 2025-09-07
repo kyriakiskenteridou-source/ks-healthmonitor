@@ -6,7 +6,7 @@ import { tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:3000';// 'http://62.74.232.210:4566/healthmonitor/users/login';
+  private apiUrl = 'http://62.74.232.210:4566/healthmonitor'; // 'http://localhost:3000';
   private accessToken: string | null = null;
 
   constructor(private http: HttpClient) {}
